@@ -1,0 +1,38 @@
+%main_button_style {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+    color: #458ff6;
+    padding: 0 50px;
+    text-decoration: none;
+    border: 1px solid #458ff6;
+    border-radius: 55px;
+    display: inline-block;
+}
+%main_button_hover_style{
+    background-color: #c4daf8;
+   
+}
+%main_p_style {
+    font-weight: 300;
+    color: #7d7987;
+}
+%main_h_style {
+    font-weight: bold;
+    color: #000000;
+}
+
+// Миксины
+@mixin flex($display: flex, $direction: row, $just_cont: space-between, $align_items: center) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $just_cont;
+    align-items: $align_items;
+}
+
+@mixin text($font_weight: normal, $font_size: 14px, $line_height: 14px, $color: #000000) {
+    font-weight: $font_weight;
+    font-size: $font_size;
+    line-height: $line_height;
+    color: $color;
+}
